@@ -1,0 +1,65 @@
+{
+  "name": "shop_constitution",
+  "title": "九种体质分类",
+  "schemas": [
+    {
+      "name": "code",
+      "title": "体质代码",
+      "type": "String"
+    },
+    {
+      "name": "name",
+      "title": "体质名称",
+      "type": "String"
+    },
+    {
+      "name": "color",
+      "title": "主题色",
+      "type": "String"
+    },
+    {
+      "name": "icon",
+      "title": "图标",
+      "type": "String"
+    },
+    {
+      "name": "description",
+      "title": "体质特征",
+      "type": "String"
+    },
+    {
+      "name": "characteristics",
+      "title": "典型表现",
+      "type": "Array",
+      "items": {
+        "type": "String"
+      }
+    },
+    {
+      "name": "dietary_guidance",
+      "title": "饮食指导",
+      "type": "String"
+    },
+    {
+      "name": "recommended_foods",
+      "title": "推荐食材",
+      "type": "Array",
+      "items": {
+        "type": "String"
+      }
+    },
+    {
+      "name": "avoid_foods",
+      "title": "禁忌食材",
+      "type": "Array",
+      "items": {
+        "type": "String"
+      }
+    },
+    {
+      "name": "order",
+      "title": "排序",
+      "type": "Number"
+    }
+  ]
+}

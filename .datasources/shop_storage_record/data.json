@@ -1,0 +1,47 @@
+[
+  {
+    "_id": "storage_record_001",
+    "member_id": "member_001",
+    "type": "recharge",
+    "amount": 1000,
+    "balance_after": 1000,
+    "give_amount": 50,
+    "payment_method": "wechat",
+    "description": "储值充值",
+    "createdAt": 1745203200000,
+    "updatedAt": 1745203200000,
+    "owner": "user_001",
+    "createBy": "user_001",
+    "updateBy": "user_001"
+  },
+  {
+    "_id": "storage_record_002",
+    "member_id": "member_001",
+    "type": "consume",
+    "amount": -200,
+    "balance_after": 800,
+    "payment_method": "storage",
+    "order_id": "order_20250420",
+    "description": "订单消费",
+    "createdAt": 1747766400000,
+    "updatedAt": 1747766400000,
+    "owner": "user_001",
+    "createBy": "user_001",
+    "updateBy": "user_001"
+  },
+  {
+    "_id": "storage_record_003",
+    "member_id": "member_001",
+    "type": "consume",
+    "amount": -300,
+    "balance_after": 500,
+    "payment_method": "storage",
+    "order_id": "order_20250505",
+    "description": "订单消费",
+    "createdAt": 1749916800000,
+    "updatedAt": 1749916800000,
+    "owner": "user_001",
+    "createBy": "user_001",
+    "updateBy": "user_001"
+  }
+]

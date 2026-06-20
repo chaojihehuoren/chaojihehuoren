@@ -1,0 +1,54 @@
+{
+  "name": "shop_storage_record",
+  "title": "储值明细",
+  "schemas": [
+    {
+      "name": "member_id",
+      "title": "会员ID",
+      "type": "String",
+      "description": "关联会员基础信息"
+    },
+    {
+      "name": "type",
+      "title": "类型",
+      "type": "String",
+      "description": "recharge-充值/consume-消费/refund-退款/transfer-转账"
+    },
+    {
+      "name": "amount",
+      "title": "金额",
+      "type": "Number",
+      "description": "变动金额，单位：元"
+    },
+    {
+      "name": "balance_after",
+      "title": "变动后余额",
+      "type": "Number",
+      "description": "变动后储值余额"
+    },
+    {
+      "name": "give_amount",
+      "title": "赠送金额",
+      "type": "Number",
+      "description": "充值赠送金额"
+    },
+    {
+      "name": "payment_method",
+      "title": "支付方式",
+      "type": "String",
+      "description": "wechat/alipay/bankcard"
+    },
+    {
+      "name": "order_id",
+      "title": "关联订单",
+      "type": "String",
+      "description": "关联订单ID"
+    },
+    {
+      "name": "description",
+      "title": "描述",
+      "type": "String",
+      "description": "储值变动说明"
+    }
+  ]
+}

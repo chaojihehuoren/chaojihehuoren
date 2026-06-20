@@ -1,0 +1,77 @@
+[
+  {
+    "_id": "comparison_001",
+    "createdAt": 1721597200000,
+    "updatedAt": 1721597200000,
+    "member_id": "member_001",
+    "report_ids": ["report_001", "report_002"],
+    "comparison_type": "monthly",
+    "changes": [
+      {
+        "constitution": "平和质",
+        "from_score": 45,
+        "to_score": 52,
+        "change": 7,
+        "trend": "improving"
+      },
+      {
+        "constitution": "气虚质",
+        "from_score": 72,
+        "to_score": 65,
+        "change": -7,
+        "trend": "improving"
+      },
+      {
+        "constitution": "阳虚质",
+        "from_score": 58,
+        "to_score": 55,
+        "change": -3,
+        "trend": "stable"
+      },
+      {
+        "constitution": "阴虚质",
+        "from_score": 35,
+        "to_score": 32,
+        "change": -3,
+        "trend": "stable"
+      },
+      {
+        "constitution": "痰湿质",
+        "from_score": 28,
+        "to_score": 25,
+        "change": -3,
+        "trend": "stable"
+      },
+      {
+        "constitution": "湿热质",
+        "from_score": 22,
+        "to_score": 20,
+        "change": -2,
+        "trend": "stable"
+      },
+      {
+        "constitution": "血瘀质",
+        "from_score": 18,
+        "to_score": 15,
+        "change": -3,
+        "trend": "stable"
+      },
+      {
+        "constitution": "气郁质",
+        "from_score": 25,
+        "to_score": 22,
+        "change": -3,
+        "trend": "stable"
+      },
+      {
+        "constitution": "特禀质",
+        "from_score": 12,
+        "to_score": 10,
+        "change": -2,
+        "trend": "stable"
+      }
+    ],
+    "summary": "经过30天的食疗调理，气虚质得分明显下降（-7分），平和质得分上升（+7分），整体体质向好发展。建议继续坚持当前调理方案。",
+    "period_days": 30
+  }
+]

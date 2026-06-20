@@ -1,0 +1,146 @@
+[
+  {
+    "_id": "q_001",
+    "createdAt": 1718000000000,
+    "updatedAt": 1718000000000,
+    "question_id": 1,
+    "question_text": "您是否容易疲乏、气短，呼吸急促？",
+    "tip": "请根据近三个月的感受作答",
+    "constitution_type": "气虚质",
+    "options": [
+      { "label": "没有", "value": 1 },
+      { "label": "偶尔", "value": 2 },
+      { "label": "有时", "value": 3 },
+      { "label": "经常", "value": 4 },
+      { "label": "总是", "value": 5 }
+    ],
+    "is_active": true,
+    "order": 1
+  },
+  {
+    "_id": "q_002",
+    "createdAt": 1718000000000,
+    "updatedAt": 1718000000000,
+    "question_id": 2,
+    "question_text": "您是否容易畏寒、手脚冰凉？",
+    "tip": "",
+    "constitution_type": "阳虚质",
+    "options": [
+      { "label": "没有", "value": 1 },
+      { "label": "偶尔", "value": 2 },
+      { "label": "有时", "value": 3 },
+      { "label": "经常", "value": 4 },
+      { "label": "总是", "value": 5 }
+    ],
+    "is_active": true,
+    "order": 2
+  },
+  {
+    "_id": "q_003",
+    "createdAt": 1718000000000,
+    "updatedAt": 1718000000000,
+    "question_id": 3,
+    "question_text": "您是否容易口干舌燥、咽喉干痛？",
+    "tip": "",
+    "constitution_type": "阴虚质",
+    "options": [
+      { "label": "没有", "value": 1 },
+      { "label": "偶尔", "value": 2 },
+      { "label": "有时", "value": 3 },
+      { "label": "经常", "value": 4 },
+      { "label": "总是", "value": 5 }
+    ],
+    "is_active": true,
+    "order": 3
+  },
+  {
+    "_id": "q_004",
+    "createdAt": 1718000000000,
+    "updatedAt": 1718000000000,
+    "question_id": 4,
+    "question_text": "您的体形是否偏胖，腹部肥满松软？",
+    "tip": "",
+    "constitution_type": "痰湿质",
+    "options": [
+      { "label": "绝对不是", "value": 1 },
+      { "label": "不太像", "value": 2 },
+      { "label": "有些像", "value": 3 },
+      { "label": "比较像", "value": 4 },
+      { "label": "完全符合", "value": 5 }
+    ],
+    "is_active": true,
+    "order": 4
+  },
+  {
+    "_id": "q_005",
+    "createdAt": 1718000000000,
+    "updatedAt": 1718000000000,
+    "question_id": 5,
+    "question_text": "您面部或皮肤是否容易出油、长痘？",
+    "tip": "",
+    "constitution_type": "湿热质",
+    "options": [
+      { "label": "没有", "value": 1 },
+      { "label": "偶尔", "value": 2 },
+      { "label": "有时", "value": 3 },
+      { "label": "经常", "value": 4 },
+      { "label": "总是", "value": 5 }
+    ],
+    "is_active": true,
+    "order": 5
+  },
+  {
+    "_id": "q_006",
+    "createdAt": 1718000000000,
+    "updatedAt": 1718000000000,
+    "question_id": 6,
+    "question_text": "您是否容易出现疼痛症状，如头痛、胸痛等？",
+    "tip": "",
+    "constitution_type": "血瘀质",
+    "options": [
+      { "label": "没有", "value": 1 },
+      { "label": "偶尔", "value": 2 },
+      { "label": "有时", "value": 3 },
+      { "label": "经常", "value": 4 },
+      { "label": "总是", "value": 5 }
+    ],
+    "is_active": true,
+    "order": 6
+  },
+  {
+    "_id": "q_007",
+    "createdAt": 1718000000000,
+    "updatedAt": 1718000000000,
+    "question_id": 7,
+    "question_text": "您是否容易情绪低落、焦虑不安？",
+    "tip": "",
+    "constitution_type": "气郁质",
+    "options": [
+      { "label": "没有", "value": 1 },
+      { "label": "偶尔", "value": 2 },
+      { "label": "有时", "value": 3 },
+      { "label": "经常", "value": 4 },
+      { "label": "总是", "value": 5 }
+    ],
+    "is_active": true,
+    "order": 7
+  },
+  {
+    "_id": "q_008",
+    "createdAt": 1718000000000,
+    "updatedAt": 1718000000000,
+    "question_id": 8,
+    "question_text": "您是否对某些食物、药物或花粉过敏？",
+    "tip": "",
+    "constitution_type": "特禀质",
+    "options": [
+      { "label": "没有", "value": 1 },
+      { "label": "有，但不严重", "value": 2 },
+      { "label": "有时过敏", "value": 3 },
+      { "label": "经常过敏", "value": 4 },
+      { "label": "严重过敏", "value": 5 }
+    ],
+    "is_active": true,
+    "order": 8
+  }
+]

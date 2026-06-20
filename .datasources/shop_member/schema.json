@@ -1,0 +1,55 @@
+{
+  "name": "shop_member",
+  "title": "会员基础信息",
+  "schemas": [
+    {
+      "name": "level",
+      "title": "会员等级",
+      "type": "String",
+      "description": "普通/银卡/金卡/经销商"
+    },
+    {
+      "name": "nickname",
+      "title": "昵称",
+      "type": "String",
+      "description": "用户昵称或姓名"
+    },
+    {
+      "name": "phone",
+      "title": "手机号",
+      "type": "String",
+      "description": "用户手机号"
+    },
+    {
+      "name": "avatar",
+      "title": "头像",
+      "type": "String",
+      "description": "用户头像URL"
+    },
+    {
+      "name": "member_since",
+      "title": "入会时间",
+      "type": "DateTime",
+      "format": "timestamp-ms",
+      "description": "会员注册时间"
+    },
+    {
+      "name": "total_consumption",
+      "title": "累计消费",
+      "type": "Number",
+      "description": "累计消费金额，单位：元"
+    },
+    {
+      "name": "upgrade_points",
+      "title": "升级积分",
+      "type": "Number",
+      "description": "距离下一等级需要的积分"
+    },
+    {
+      "name": "status",
+      "title": "状态",
+      "type": "String",
+      "description": "active/inactive/suspended"
+    }
+  ]
+}

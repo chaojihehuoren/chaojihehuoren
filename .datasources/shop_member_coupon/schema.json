@@ -1,0 +1,75 @@
+{
+  "name": "shop_member_coupon",
+  "title": "会员优惠券",
+  "schemas": [
+    {
+      "name": "member_id",
+      "title": "会员ID",
+      "type": "String",
+      "description": "关联会员基础信息"
+    },
+    {
+      "name": "coupon_type",
+      "title": "优惠券类型",
+      "type": "String",
+      "description": "cash-满减券/discount-折扣券/shipping-运费券"
+    },
+    {
+      "name": "name",
+      "title": "优惠券名称",
+      "type": "String",
+      "description": "如：新人专享20元券"
+    },
+    {
+      "name": "discount_value",
+      "title": "优惠值",
+      "type": "Number",
+      "description": "满减金额或折扣比例"
+    },
+    {
+      "name": "min_amount",
+      "title": "使用门槛",
+      "type": "Number",
+      "description": "最低消费金额，0表示无门槛"
+    },
+    {
+      "name": "status",
+      "title": "状态",
+      "type": "String",
+      "description": "unused-未使用/used-已使用/expired-已过期"
+    },
+    {
+      "name": "receive_time",
+      "title": "领取时间",
+      "type": "DateTime",
+      "format": "timestamp-ms",
+      "description": "优惠券领取时间"
+    },
+    {
+      "name": "use_time",
+      "title": "使用时间",
+      "type": "DateTime",
+      "format": "timestamp-ms",
+      "description": "优惠券使用时间"
+    },
+    {
+      "name": "expire_time",
+      "title": "过期时间",
+      "type": "DateTime",
+      "format": "timestamp-ms",
+      "description": "优惠券过期时间"
+    },
+    {
+      "name": "order_id",
+      "title": "使用订单",
+      "type": "String",
+      "description": "关联使用订单ID"
+    },
+    {
+      "name": "source",
+      "title": "来源",
+      "type": "String",
+      "description": "system-系统发放/activity-活动领取/self-自助领取"
+    }
+  ]
+}

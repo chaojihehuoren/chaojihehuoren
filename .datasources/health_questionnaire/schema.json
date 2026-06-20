@@ -1,0 +1,59 @@
+{
+  "name": "health_questionnaire",
+  "title": "体质问卷题目",
+  "schemas": [
+    {
+      "name": "question_id",
+      "title": "题目ID",
+      "type": "Number"
+    },
+    {
+      "name": "question_text",
+      "title": "题目内容",
+      "type": "String"
+    },
+    {
+      "name": "tip",
+      "title": "题目提示",
+      "type": "String",
+      "description": "如：请根据近三个月的感受作答"
+    },
+    {
+      "name": "constitution_type",
+      "title": "关联体质",
+      "type": "String",
+      "description": "该题目关联的体质类型"
+    },
+    {
+      "name": "options",
+      "title": "选项列表",
+      "type": "Array",
+      "items": {
+        "type": "Object",
+        "properties": [
+          {
+            "name": "label",
+            "title": "选项标签",
+            "type": "String"
+          },
+          {
+            "name": "value",
+            "title": "选项值",
+            "type": "Number"
+          }
+        ]
+      },
+      "description": "5个选项"
+    },
+    {
+      "name": "is_active",
+      "title": "是否启用",
+      "type": "Boolean"
+    },
+    {
+      "name": "order",
+      "title": "排序",
+      "type": "Number"
+    }
+  ]
+}

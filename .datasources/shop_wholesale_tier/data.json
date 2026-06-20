@@ -1,0 +1,134 @@
+[
+  {
+    "_id": "tier_huangqi_10",
+    "spu_id": "huangqi",
+    "min_quantity": 10,
+    "max_quantity": 49,
+    "discount_rate": 0.8,
+    "tier_name": "10件起",
+    "is_active": true,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "tier_huangqi_50",
+    "spu_id": "huangqi",
+    "min_quantity": 50,
+    "max_quantity": 99,
+    "discount_rate": 0.7,
+    "tier_name": "50件起",
+    "is_active": true,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "tier_huangqi_100",
+    "spu_id": "huangqi",
+    "min_quantity": 100,
+    "max_quantity": 0,
+    "discount_rate": 0.6,
+    "tier_name": "100件起",
+    "is_active": true,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "tier_gouqi_10",
+    "spu_id": "gouqi",
+    "min_quantity": 10,
+    "max_quantity": 49,
+    "discount_rate": 0.8,
+    "tier_name": "10件起",
+    "is_active": true,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "tier_gouqi_50",
+    "spu_id": "gouqi",
+    "min_quantity": 50,
+    "max_quantity": 99,
+    "discount_rate": 0.7,
+    "tier_name": "50件起",
+    "is_active": true,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "tier_gouqi_100",
+    "spu_id": "gouqi",
+    "min_quantity": 100,
+    "max_quantity": 0,
+    "discount_rate": 0.6,
+    "tier_name": "100件起",
+    "is_active": true,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "tier_xys_10",
+    "spu_id": "xys",
+    "min_quantity": 10,
+    "max_quantity": 49,
+    "discount_rate": 0.8,
+    "tier_name": "10件起",
+    "is_active": true,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "tier_xys_50",
+    "spu_id": "xys",
+    "min_quantity": 50,
+    "max_quantity": 99,
+    "discount_rate": 0.7,
+    "tier_name": "50件起",
+    "is_active": true,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "tier_xys_100",
+    "spu_id": "xys",
+    "min_quantity": 100,
+    "max_quantity": 0,
+    "discount_rate": 0.6,
+    "tier_name": "100件起",
+    "is_active": true,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "tier_hdcm_10",
+    "spu_id": "hdcm",
+    "min_quantity": 10,
+    "max_quantity": 49,
+    "discount_rate": 0.8,
+    "tier_name": "10件起",
+    "is_active": true,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "tier_hdcm_50",
+    "spu_id": "hdcm",
+    "min_quantity": 50,
+    "max_quantity": 99,
+    "discount_rate": 0.7,
+    "tier_name": "50件起",
+    "is_active": true,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "tier_hdcm_100",
+    "spu_id": "hdcm",
+    "min_quantity": 100,
+    "max_quantity": 0,
+    "discount_rate": 0.6,
+    "tier_name": "100件起",
+    "is_active": true,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  }
+]

@@ -1,0 +1,77 @@
+{
+  "name": "health_constitution_comparison",
+  "title": "体质历史对比",
+  "schemas": [
+    {
+      "name": "member_id",
+      "title": "用户ID",
+      "type": "String",
+      "description": "关联会员ID"
+    },
+    {
+      "name": "report_ids",
+      "title": "对比报告IDs",
+      "type": "Array",
+      "items": {
+        "type": "String"
+      },
+      "description": "参与对比的报告ID列表"
+    },
+    {
+      "name": "comparison_type",
+      "title": "对比类型",
+      "type": "String",
+      "description": "monthly-月度对比/quarterly-季度对比/yearly-年度对比"
+    },
+    {
+      "name": "changes",
+      "title": "体质变化",
+    "type": "Array",
+      "items": {
+        "type": "Object",
+        "properties": [
+          {
+            "name": "constitution",
+            "title": "体质类型",
+            "type": "String"
+          },
+          {
+            "name": "from_score",
+            "title": "变化前得分",
+            "type": "Number"
+          },
+          {
+            "name": "to_score",
+            "title": "变化后得分",
+            "type": "Number"
+          },
+          {
+            "name": "change",
+            "title": "变化值",
+            "type": "Number",
+            "description": "正值表示增加，负值表示减少"
+          },
+          {
+            "name": "trend",
+            "title": "趋势",
+            "type": "String",
+            "description": "improving-改善/worsening-恶化/stable-稳定"
+          }
+        ]
+      },
+      "description": "各体质的变化情况"
+    },
+    {
+      "name": "summary",
+      "title": "对比总结",
+      "type": "String",
+      "description": "整体改善或恶化的文字描述"
+    },
+    {
+      "name": "period_days",
+      "title": "对比周期",
+      "type": "Number",
+      "description": "两次检测相隔天数"
+    }
+  ]
+}

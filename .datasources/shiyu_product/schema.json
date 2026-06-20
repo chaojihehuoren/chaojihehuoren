@@ -1,0 +1,109 @@
+{
+  "name": "shiyu_product",
+  "title": "药食同源商品",
+  "schemas": [
+    {
+      "name": "subtitle",
+      "title": "副标题",
+      "type": "String"
+    },
+    {
+      "name": "retail_price",
+      "title": "零售价",
+      "type": "Number"
+    },
+    {
+      "name": "original_price",
+      "title": "原价",
+      "type": "Number"
+    },
+    {
+      "name": "sales",
+      "title": "销量",
+      "type": "Number"
+    },
+    {
+      "name": "rating",
+      "title": "评分",
+      "type": "Number"
+    },
+    {
+      "name": "review_count",
+      "title": "评价数",
+      "type": "Number"
+    },
+    {
+      "name": "origin",
+      "title": "产地",
+      "type": "String"
+    },
+    {
+      "name": "raw_material",
+      "title": "原材料",
+      "type": "String"
+    },
+    {
+      "name": "storage",
+      "title": "贮存方式",
+      "type": "String"
+    },
+    {
+      "name": "shelf_life",
+      "title": "保质期",
+      "type": "String"
+    },
+    {
+      "name": "suited_constitutions",
+      "title": "体质适配",
+      "type": "Array",
+      "items": {
+        "type": "String"
+      }
+    },
+    {
+      "name": "effects",
+      "title": "功效描述",
+      "type": "Array",
+      "items": {
+        "type": "Object",
+        "properties": [
+          {
+            "name": "title",
+            "title": "功效标题",
+            "type": "String"
+          },
+          {
+            "name": "desc",
+            "title": "功效说明",
+            "type": "String"
+          },
+          {
+            "name": "icon",
+            "title": "图标",
+            "type": "String"
+          }
+        ]
+      }
+    },
+    {
+      "name": "category_id",
+      "title": "分类ID",
+      "type": "String"
+    },
+    {
+      "name": "is_yaoshi_tongyuan",
+      "title": "药食同源",
+      "type": "Boolean"
+    },
+    {
+      "name": "is_hot",
+      "title": "热销商品",
+      "type": "Boolean"
+    },
+    {
+      "name": "is_seasonal",
+      "title": "季节特惠",
+      "type": "Boolean"
+    }
+  ]
+}

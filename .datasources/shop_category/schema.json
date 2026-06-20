@@ -1,0 +1,36 @@
+{
+  "name": "shop_category",
+  "title": "商品分类",
+  "schemas": [
+    {
+      "name": "code",
+      "title": "分类代码",
+      "type": "String"
+    },
+    {
+      "name": "name",
+      "title": "分类名称",
+      "type": "String"
+    },
+    {
+      "name": "icon",
+      "title": "图标",
+      "type": "String"
+    },
+    {
+      "name": "description",
+      "title": "分类描述",
+      "type": "String"
+    },
+    {
+      "name": "color",
+      "title": "主题色",
+      "type": "String"
+    },
+    {
+      "name": "order",
+      "title": "排序",
+      "type": "Number"
+    }
+  ]
+}

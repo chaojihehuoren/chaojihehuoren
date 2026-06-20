@@ -1,0 +1,55 @@
+{
+  "name": "shop_points_record",
+  "title": "积分明细",
+  "schemas": [
+    {
+      "name": "member_id",
+      "title": "会员ID",
+      "type": "String",
+      "description": "关联会员基础信息"
+    },
+    {
+      "name": "type",
+      "title": "类型",
+      "type": "String",
+      "description": "earn-获取/spend-消耗/expire-过期/freeze-冻结/unfreeze-解冻"
+    },
+    {
+      "name": "points",
+      "title": "积分数量",
+      "type": "Number",
+      "description": "变动积分数量"
+    },
+    {
+      "name": "balance_after",
+      "title": "变动后余额",
+      "type": "Number",
+      "description": "变动后剩余积分"
+    },
+    {
+      "name": "source",
+      "title": "来源",
+      "type": "String",
+      "description": "order-订单/review-评价/signin-签到/promotion-活动/refund-退款"
+    },
+    {
+      "name": "order_id",
+      "title": "关联订单",
+      "type": "String",
+      "description": "关联订单ID"
+    },
+    {
+      "name": "description",
+      "title": "描述",
+      "type": "String",
+      "description": "积分变动说明"
+    },
+    {
+      "name": "expires_at",
+      "title": "过期时间",
+      "type": "DateTime",
+      "format": "timestamp-ms",
+      "description": "本次积分过期时间"
+    }
+  ]
+}

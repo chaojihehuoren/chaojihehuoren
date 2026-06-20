@@ -1,0 +1,84 @@
+{
+  "name": "shop_member_benefit",
+  "title": "会员权益配置",
+  "schemas": [
+    {
+      "name": "level",
+      "title": "会员等级",
+      "type": "String",
+      "description": "ordinary-普通/silver-银卡/gold-金卡/distributor-经销商"
+    },
+    {
+      "name": "level_name",
+      "title": "等级名称",
+      "type": "String",
+      "description": "普通会员/银卡会员/金卡会员/经销商"
+    },
+    {
+      "name": "discount_rate",
+      "title": "专属折扣",
+      "type": "Number",
+      "description": "购物折扣比例，如：0.98表示98折"
+    },
+    {
+      "name": "points_multiplier",
+      "title": "积分倍数",
+      "type": "Number",
+      "description": "购物获得积分倍数"
+    },
+    {
+      "name": "free_shipping_threshold",
+      "title": "免运费门槛",
+      "type": "Number",
+      "description": "免运费最低消费金额"
+    },
+    {
+      "name": "birthday_benefit",
+      "title": "生日福利",
+      "type": "String",
+      "description": "生日专属福利描述"
+    },
+    {
+      "name": "exclusive_service",
+      "title": "专属客服",
+      "type": "Boolean",
+      "description": "是否有专属客服"
+    },
+    {
+      "name": "special_events",
+      "title": "专属活动",
+      "type": "Boolean",
+      "description": "是否参与会员专属活动"
+    },
+    {
+      "name": "upgrade_threshold",
+      "title": "升级门槛",
+      "type": "Number",
+      "description": "升级到该等级需要的累计消费"
+    },
+    {
+      "name": "description",
+      "title": "权益描述",
+      "type": "String",
+      "description": "等级权益详细说明"
+    },
+    {
+      "name": "icon",
+      "title": "等级图标",
+      "type": "String",
+      "description": "等级展示图标"
+    },
+    {
+      "name": "color",
+      "title": "等级主题色",
+      "type": "String",
+      "description": "等级专属主题色"
+    },
+    {
+      "name": "order",
+      "title": "排序",
+      "type": "Number",
+      "description": "等级排序序号"
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+[
+  {
+    "_id": "huangqi",
+    "name": "野生黄芪片",
+    "subtitle": "甘肃岷县 · 六年根 · 道地药材",
+    "retail_price": 128,
+    "original_price": 168,
+    "sales": 2580,
+    "rating": 4.8,
+    "review_count": 128,
+    "origin": "甘肃岷县 · 道地药材核心产区",
+    "raw_material": "野生六年根 · 人工精选 · 无硫熏制",
+    "storage": "阴凉干燥处保存",
+    "shelf_life": "24个月",
+    "suited_constitutions": ["qixu", "yangxu", "yinxu"],
+    "effects": [
+      {"title": "补气固表", "desc": "增强机体免疫力", "icon": "Leaf"},
+      {"title": "利水消肿", "desc": "促进身体代谢", "icon": "Heart"},
+      {"title": "托毒排脓", "desc": "促进伤口愈合", "icon": "Shield"},
+      {"title": "延缓衰老", "desc": "滋补养生驻颜", "icon": "Clock"}
+    ],
+    "category_id": "yaoshan",
+    "is_yaoshi_tongyuan": true,
+    "is_hot": true,
+    "is_seasonal": false,
+    "swiper_images": [
+      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1563911302283-d2bc129e7c1f?w=600&h=600&fit=crop"
+    ],
+    "cover_image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=300&h=300&fit=crop",
+    "detail": "野生黄芪片选用甘肃岷县六年根野生黄芪，采用传统工艺切片，自然晾晒，无硫熏制，保留药材最纯粹的功效。",
+    "status": "ENABLED",
+    "priority": 1,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "gouqi",
+    "name": "枸杞原浆",
+    "subtitle": "宁夏中宁 · 有机认证",
+    "retail_price": 89,
+    "original_price": 108,
+    "sales": 3260,
+    "rating": 4.9,
+    "review_count": 256,
+    "origin": "宁夏中宁 · 黄河灌溉区",
+    "raw_material": "有机枸杞 · 鲜果榨取 · 无添加",
+    "storage": "冷藏保存",
+    "shelf_life": "12个月",
+    "suited_constitutions": ["yinxu", "qixu", "yangxu"],
+    "effects": [
+      {"title": "滋补肝肾", "desc": "养肝明目益精", "icon": "Eye"},
+      {"title": "益精明目", "desc": "改善视力模糊", "icon": "Sun"},
+      {"title": "润肺抗燥", "desc": "缓解秋冬干燥", "icon": "Droplet"}
+    ],
+    "category_id": "yaoshan",
+    "is_yaoshi_tongyuan": true,
+    "is_hot": true,
+    "is_seasonal": true,
+    "swiper_images": [
+      "https://images.unsplash.com/photo-1599305090598-fe179d501227?w=600&h=600&fit=crop"
+    ],
+    "cover_image": "https://images.unsplash.com/photo-1599305090598-fe179d501227?w=300&h=300&fit=crop",
+    "detail": "枸杞原浆选用宁夏中宁有机枸杞，鲜果直接榨取，保留枸杞最完整的营养成分，不添加任何防腐剂。",
+    "status": "ENABLED",
+    "priority": 2,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "xys",
+    "name": "西洋参切片",
+    "subtitle": "长白山 · 六年根",
+    "retail_price": 268,
+    "original_price": 328,
+    "sales": 1890,
+    "rating": 4.7,
+    "review_count": 98,
+    "origin": "长白山 · 原始森林产区",
+    "raw_material": "进口西洋参 · 六年根 · 低温烘干",
+    "storage": "阴凉干燥处保存",
+    "shelf_life": "36个月",
+    "suited_constitutions": ["yinxu", "qixu", "shire"],
+    "effects": [
+      {"title": "补气养阴", "desc": "气阴双补", "icon": "Wind"},
+      {"title": "清热生津", "desc": "降火润燥", "icon": "Flame"},
+      {"title": "增强免疫", "desc": "提高抵抗力", "icon": "Shield"}
+    ],
+    "category_id": "yaoshan",
+    "is_yaoshi_tongyuan": true,
+    "is_hot": true,
+    "is_seasonal": false,
+    "swiper_images": [
+      "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&h=600&fit=crop"
+    ],
+    "cover_image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=300&h=300&fit=crop",
+    "detail": "西洋参切片选用长白山原始森林产区六年根西洋参，采用低温烘干工艺，保留西洋参最完整的人参皂苷。",
+    "status": "ENABLED",
+    "priority": 3,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "hdcm",
+    "name": "红豆薏米茶",
+    "subtitle": "祛湿排毒 · 药食同源",
+    "retail_price": 58,
+    "original_price": 78,
+    "sales": 4520,
+    "rating": 4.6,
+    "review_count": 512,
+    "origin": "贵州黔东南 · 原生态产区",
+    "raw_material": "赤小豆 · 薏苡仁 · 人工筛选",
+    "storage": "干燥处保存",
+    "shelf_life": "18个月",
+    "suited_constitutions": ["tanshi", "shire", "qixu"],
+    "effects": [
+      {"title": "祛湿消肿", "desc": "利水渗湿", "icon": "Droplet"},
+      {"title": "健脾养胃", "desc": "调理脾胃", "icon": "Stomach"},
+      {"title": "排毒养颜", "desc": "美容肌肤", "icon": "Sparkles"}
+    ],
+    "category_id": "yaoshan",
+    "is_yaoshi_tongyuan": true,
+    "is_hot": true,
+    "is_seasonal": true,
+    "swiper_images": [
+      "https://images.unsplash.com/photo-1563911302283-d2bc129e7c1f?w=600&h=600&fit=crop"
+    ],
+    "cover_image": "https://images.unsplash.com/photo-1563911302283-d2bc129e7c1f?w=300&h=300&fit=crop",
+    "detail": "红豆薏米茶选用贵州黔东南原生态产区的赤小豆和薏苡仁，科学配比，温润不寒凉，适合长期饮用。",
+    "status": "ENABLED",
+    "priority": 4,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "dongchong",
+    "name": "冬虫夏草",
+    "subtitle": "西藏那曲 · 野生采集",
+    "retail_price": 1680,
+    "original_price": 1980,
+    "sales": 568,
+    "rating": 5.0,
+    "review_count": 32,
+    "origin": "西藏那曲 · 海拔4500米",
+    "raw_material": "野生冬虫夏草 · 人工精选",
+    "storage": "冷藏干燥保存",
+    "shelf_life": "24个月",
+    "suited_constitutions": ["qixu", "yangxu", "laonian"],
+    "effects": [
+      {"title": "补肾益肺", "desc": "滋补肺肾", "icon": "Heart"},
+      {"title": "止血化痰", "desc": "理肺止咳", "icon": "Lungs"},
+      {"title": "增强免疫", "desc": "提高体质", "icon": "Shield"}
+    ],
+    "category_id": "yaoshan",
+    "is_yaoshi_tongyuan": true,
+    "is_hot": false,
+    "is_seasonal": false,
+    "swiper_images": [
+      "https://images.unsplash.com/photo-158革?w=600&h=600&fit=crop"
+    ],
+    "cover_image": "https://images.unsplash.com/photo-158革?w=300&h=300&fit=crop",
+    "detail": "冬虫夏草选用西藏那曲海拔4500米以上野生采集的优质虫草，个大饱满，色泽金黄。",
+    "status": "ENABLED",
+    "priority": 5,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "lingshi",
+    "name": "灵芝孢子粉",
+    "subtitle": "长白山 · 破壁技术",
+    "retail_price": 398,
+    "original_price": 488,
+    "sales": 1230,
+    "rating": 4.8,
+    "review_count": 86,
+    "origin": "长白山 · 仿野生种植",
+    "raw_material": "赤芝孢子 · 低温破壁 · 纯粉",
+    "storage": "阴凉干燥处保存",
+    "shelf_life": "24个月",
+    "suited_constitutions": ["qixu", "tebing", "manbing"],
+    "effects": [
+      {"title": "补气安神", "desc": "益气养心", "icon": "Moon"},
+      {"title": "止咳平喘", "desc": "润肺止咳", "icon": "Lungs"},
+      {"title": "增强免疫", "desc": "扶正固本", "icon": "Shield"}
+    ],
+    "category_id": "yaoshan",
+    "is_yaoshi_tongyuan": true,
+    "is_hot": true,
+    "is_seasonal": false,
+    "swiper_images": [
+      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&h=600&fit=crop"
+    ],
+    "cover_image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=300&h=300&fit=crop",
+    "detail": "灵芝孢子粉选用长白山仿野生种植的赤芝孢子，采用低温破壁技术，人体吸收率提高3-5倍。",
+    "status": "ENABLED",
+    "priority": 6,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  }
+]

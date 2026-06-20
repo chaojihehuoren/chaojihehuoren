@@ -1,0 +1,48 @@
+[
+  {
+    "_id": "trend_001",
+    "createdAt": 1718908800000,
+    "updatedAt": 1721597200000,
+    "member_id": "member_001",
+    "constitution_type": "气虚质",
+    "trend_data": [
+      {
+        "date": 1718908800000,
+        "score": 72,
+        "report_id": "report_001"
+      },
+      {
+        "date": 1721597200000,
+        "score": 65,
+        "report_id": "report_002"
+      }
+    ],
+    "trend_direction": "down",
+    "change_rate": -7.0,
+    "prediction": "气虚质得分呈下降趋势，建议继续坚持补气调理方案，预计2-3个月可稳定在平和范围。",
+    "last_updated": 1721597200000
+  },
+  {
+    "_id": "trend_002",
+    "createdAt": 1718908800000,
+    "updatedAt": 1721597200000,
+    "member_id": "member_001",
+    "constitution_type": "平和质",
+    "trend_data": [
+      {
+        "date": 1718908800000,
+        "score": 45,
+        "report_id": "report_001"
+      },
+      {
+        "date": 1721597200000,
+        "score": 52,
+        "report_id": "report_002"
+      }
+    ],
+    "trend_direction": "up",
+    "change_rate": 7.0,
+    "prediction": "平和质得分稳步上升，体质整体向好发展。继续保持当前养生习惯。",
+    "last_updated": 1721597200000
+  }
+]

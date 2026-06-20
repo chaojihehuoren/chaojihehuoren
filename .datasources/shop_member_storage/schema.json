@@ -1,0 +1,36 @@
+{
+  "name": "shop_member_storage",
+  "title": "储值账户",
+  "schemas": [
+    {
+      "name": "member_id",
+      "title": "会员ID",
+      "type": "String",
+      "description": "关联会员基础信息"
+    },
+    {
+      "name": "balance",
+      "title": "储值余额",
+      "type": "Number",
+      "description": "当前储值金额，单位：元"
+    },
+    {
+      "name": "total_recharged",
+      "title": "累计充值",
+      "type": "Number",
+      "description": "历史累计充值金额"
+    },
+    {
+      "name": "total_consumed",
+      "title": "累计消费",
+      "type": "Number",
+      "description": "历史累计消费金额"
+    },
+    {
+      "name": "give_amount",
+      "title": "赠送金额",
+      "type": "Number",
+      "description": "累计赠送金额"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "_id": "tizhi",
+    "code": "tizhi",
+    "name": "体质调理",
+    "icon": "YinYang",
+    "description": "根据您的体质类型，推荐专属的养生方案",
+    "color": "#5D8A66",
+    "order": 1,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "jieqi",
+    "code": "jieqi",
+    "name": "节气养生",
+    "icon": "Calendar",
+    "description": "顺应二十四节气，科学养生不同时节",
+    "color": "#C4A77D",
+    "order": 2,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "yaoshan",
+    "code": "yaoshan",
+    "name": "药膳食材",
+    "icon": "Leaf",
+    "description": "道地药材食材，药食同源品质保证",
+    "color": "#A85C4A",
+    "order": 3,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  },
+  {
+    "_id": "manbing",
+    "code": "manbing",
+    "name": "慢病养护",
+    "icon": "Heart",
+    "description": "专业健康指导，慢性病的日常养护",
+    "color": "#6B8E9F",
+    "order": 4,
+    "createdAt": 1750444800000,
+    "updatedAt": 1750444800000
+  }
+]

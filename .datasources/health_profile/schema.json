@@ -1,0 +1,108 @@
+{
+  "name": "health_profile",
+  "title": "健康档案",
+  "schemas": [
+    {
+      "name": "member_id",
+      "title": "用户ID",
+      "type": "String",
+      "description": "关联会员ID"
+    },
+    {
+      "name": "latest_report_id",
+      "title": "最新报告ID",
+      "type": "String",
+      "description": "关联最新的体质报告"
+    },
+    {
+      "name": "report_count",
+      "title": "报告数量",
+      "type": "Number",
+      "description": "累计检测次数"
+    },
+    {
+      "name": "allergy_records",
+      "title": "过敏记录",
+      "type": "Array",
+      "items": {
+        "type": "Object",
+        "properties": [
+          {
+            "name": "allergen",
+            "title": "过敏原名称",
+            "type": "String"
+          },
+          {
+            "name": "category",
+            "title": "类别",
+            "type": "String",
+            "description": "food-食物/drug-药物/other-其他"
+          },
+          {
+            "name": "severity",
+            "title": "严重程度",
+            "type": "String",
+            "description": "mild-轻度/moderate-中度/severe-重度"
+          },
+          {
+            "name": "discovered_at",
+            "title": "发现时间",
+            "type": "DateTime",
+            "format": "timestamp-ms"
+          },
+          {
+            "name": "notes",
+            "title": "备注",
+            "type": "String"
+          }
+        ]
+      },
+      "description": "过敏原记录列表"
+    },
+    {
+      "name": "chronic_conditions",
+      "title": "慢性病史",
+      "type": "Array",
+      "items": {
+        "type": "String"
+      },
+      "description": "已知的慢性疾病"
+    },
+    {
+      "name": "family_history",
+      "title": "家族病史",
+      "type": "Array",
+      "items": {
+        "type": "String"
+      },
+      "description": "家族遗传疾病"
+    },
+    {
+      "name": "sleep_quality",
+      "title": "睡眠质量",
+      "type": "String",
+      "description": "good-良好/fair-一般/poor-较差"
+    },
+    {
+      "name": "exercise_frequency",
+      "title": "运动频率",
+      "type": "String",
+      "description": "daily-每天/weekly-每周几次/occasionally-偶尔/none-从不"
+    },
+    {
+      "name": "diet_habits",
+      "title": "饮食习惯",
+      "type": "Array",
+      "items": {
+        "type": "String"
+      },
+      "description": "偏好饮食描述"
+    },
+    {
+      "name": "is_public",
+      "title": "是否公开",
+      "type": "Boolean",
+      "description": "是否允许平台用于推荐"
+    }
+  ]
+}

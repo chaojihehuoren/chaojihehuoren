@@ -1,0 +1,63 @@
+{
+  "name": "health_constitution_report",
+  "title": "用户体质报告",
+  "schemas": [
+    {
+      "name": "member_id",
+      "title": "用户ID",
+      "type": "String",
+      "description": "关联会员ID"
+    },
+    {
+      "name": "main_constitution",
+      "title": "主要体质",
+      "type": "String",
+      "description": "如：气虚质、阳虚质"
+    },
+    {
+      "name": "scores",
+      "title": "体质得分",
+      "type": "Object",
+      "description": "九种体质百分制得分"
+    },
+    {
+      "name": "answers",
+      "title": "问卷答案",
+      "type": "Object",
+      "description": "题目ID到答案值的映射"
+    },
+    {
+      "name": "total_questions",
+      "title": "题目数量",
+      "type": "Number",
+      "description": "本次测试的题目总数"
+    },
+    {
+      "name": "test_duration",
+      "title": "测试时长",
+      "type": "Number",
+      "description": "测试耗时（秒）"
+    },
+    {
+      "name": "recommendations",
+      "title": "养生建议",
+      "type": "Array",
+      "items": {
+        "type": "String"
+      },
+      "description": "根据体质的5条养生建议"
+    },
+    {
+      "name": "test_source",
+      "title": "测试来源",
+      "type": "String",
+      "description": "initial-首次测试/followup-复测/seasonal-季节检测"
+    },
+    {
+      "name": "notes",
+      "title": "备注",
+      "type": "String",
+      "description": "用户备注或补充说明"
+    }
+  ]
+}

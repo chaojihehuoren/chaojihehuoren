@@ -1,0 +1,152 @@
+{
+  "name": "health_diet_plan",
+  "title": "30天食疗方案",
+  "schemas": [
+    {
+      "name": "member_id",
+      "title": "用户ID",
+      "type": "String",
+      "description": "关联会员ID"
+    },
+    {
+      "name": "report_id",
+      "title": "体质报告ID",
+      "type": "String",
+      "description": "基于哪份报告生成"
+    },
+    {
+      "name": "constitution_type",
+      "title": "目标体质",
+      "type": "String",
+      "description": "如：气虚质"
+    },
+    {
+      "name": "plan_name",
+      "title": "方案名称",
+      "type": "String",
+      "description": "如：气虚质30天调理方案"
+    },
+    {
+      "name": "start_date",
+      "title": "开始日期",
+      "type": "Date",
+      "description": "方案开始日期"
+    },
+    {
+      "name": "end_date",
+      "title": "结束日期",
+      "type": "Date",
+      "description": "方案结束日期"
+    },
+    {
+      "name": "status",
+      "title": "状态",
+      "type": "String",
+      "description": "active-进行中/completed-已完成/abandoned-已放弃"
+    },
+    {
+      "name": "daily_plans",
+      "title": "每日计划",
+      "type": "Array",
+      "items": {
+        "type": "Object",
+        "properties": [
+          {
+            "name": "day",
+            "title": "第几天",
+            "type": "Number"
+          },
+          {
+            "name": "date",
+            "title": "日期",
+            "type": "Date"
+          },
+          {
+            "name": "theme",
+            "title": "今日主题",
+            "type": "String",
+            "description": "如：补气养血日"
+          },
+          {
+            "name": "breakfast",
+            "title": "早餐推荐",
+            "type": "String"
+          },
+          {
+            "name": "lunch",
+            "title": "午餐推荐",
+            "type": "String"
+          },
+          {
+            "name": "dinner",
+            "title": "晚餐推荐",
+            "type": "String"
+          },
+          {
+            "name": "tea_recipe",
+            "title": "养生茶方",
+            "type": "String"
+          },
+          {
+            "name": "soup_recipe",
+            "title": "药膳汤方",
+            "type": "String"
+          },
+          {
+            "name": "contraindications",
+            "title": "禁忌提示",
+            "type": "String"
+          },
+          {
+            "name": "completed",
+            "title": "是否完成",
+            "type": "Boolean"
+          },
+          {
+            "name": "notes",
+            "title": "执行笔记",
+            "type": "String"
+          }
+        ]
+      },
+      "description": "30天每日计划"
+    },
+    {
+      "name": "recommended_products",
+      "title": "推荐商品",
+      "type": "Array",
+      "items": {
+        "type": "Object",
+        "properties": [
+          {
+            "name": "product_id",
+            "title": "商品ID",
+            "type": "String"
+          },
+          {
+            "name": "product_name",
+            "title": "商品名称",
+            "type": "String"
+          },
+          {
+            "name": "usage",
+            "title": "用法用量",
+            "type": "String"
+          },
+          {
+            "name": "reason",
+            "title": "推荐理由",
+            "type": "String"
+          }
+        ]
+      },
+      "description": "方案推荐的商品"
+    },
+    {
+      "name": "progress",
+      "title": "完成进度",
+      "type": "Number",
+      "description": "完成百分比（0-100）"
+    }
+  ]
+}

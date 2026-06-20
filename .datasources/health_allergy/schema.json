@@ -1,0 +1,62 @@
+{
+  "name": "health_allergy",
+  "title": "过敏食材记录",
+  "schemas": [
+    {
+      "name": "member_id",
+      "title": "用户ID",
+      "type": "String",
+      "description": "关联会员ID"
+    },
+    {
+      "name": "allergen_name",
+      "title": "过敏原名称",
+      "type": "String",
+      "description": "如：芒果、花生"
+    },
+    {
+      "name": "allergen_category",
+      "title": "过敏原类别",
+      "type": "String",
+      "description": "food-食物/drug-药物/environmental-环境/other-其他"
+    },
+    {
+      "name": "severity",
+      "title": "严重程度",
+      "type": "String",
+      "description": "mild-轻度/moderate-中度/severe-重度"
+    },
+    {
+      "name": "symptoms",
+      "title": "过敏症状",
+      "type": "Array",
+      "items": {
+        "type": "String"
+      },
+      "description": "如：皮疹、瘙痒、腹泻"
+    },
+    {
+      "name": "discovered_at",
+      "title": "发现时间",
+      "type": "DateTime",
+      "format": "timestamp-ms"
+    },
+    {
+      "name": "source",
+      "title": "信息来源",
+      "type": "String",
+      "description": "self-reported-自我报告/doctor-diagnosis-医生诊断/test-检测"
+    },
+    {
+      "name": "notes",
+      "title": "备注",
+      "type": "String"
+    },
+    {
+      "name": "is_active",
+      "title": "是否有效",
+      "type": "Boolean",
+      "description": "是否仍在过敏"
+    }
+  ]
+}

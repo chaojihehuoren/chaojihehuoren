@@ -1,0 +1,70 @@
+{
+  "name": "health_trend",
+  "title": "健康趋势分析",
+  "schemas": [
+    {
+      "name": "member_id",
+      "title": "用户ID",
+      "type": "String",
+      "description": "关联会员ID"
+    },
+    {
+      "name": "constitution_type",
+      "title": "体质类型",
+      "type": "String",
+      "description": "追踪的体质类型"
+    },
+    {
+      "name": "trend_data",
+      "title": "趋势数据",
+      "type": "Array",
+      "items": {
+        "type": "Object",
+        "properties": [
+          {
+            "name": "date",
+            "title": "日期",
+            "type": "DateTime",
+            "format": "timestamp-ms"
+          },
+          {
+            "name": "score",
+            "title": "得分",
+            "type": "Number"
+          },
+          {
+            "name": "report_id",
+            "title": "报告ID",
+            "type": "String"
+          }
+        ]
+      },
+      "description": "时间序列得分数据"
+    },
+    {
+      "name": "trend_direction",
+      "title": "趋势方向",
+      "type": "String",
+      "description": "up-上升/down-下降/stable-平稳"
+    },
+    {
+      "name": "change_rate",
+      "title": "变化率",
+      "type": "Number",
+      "description": "月均变化百分比"
+    },
+    {
+      "name": "prediction",
+      "title": "趋势预测",
+      "type": "String",
+      "description": "未来趋势预测说明"
+    },
+    {
+      "name": "last_updated",
+      "title": "最后更新",
+      "type": "DateTime",
+      "format": "timestamp-ms",
+      "description": "最后更新时间"
+    }
+  ]
+}

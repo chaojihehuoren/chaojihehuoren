@@ -1,0 +1,36 @@
+{
+  "name": "shop_wholesale_tier",
+  "title": "批发价格阶梯",
+  "schemas": [
+    {
+      "name": "spu_id",
+      "title": "商品ID",
+      "type": "String"
+    },
+    {
+      "name": "min_quantity",
+      "title": "最小数量",
+      "type": "Number"
+    },
+    {
+      "name": "max_quantity",
+      "title": "最大数量",
+      "type": "Number"
+    },
+    {
+      "name": "discount_rate",
+      "title": "折扣率",
+      "type": "Number"
+    },
+    {
+      "name": "tier_name",
+      "title": "阶梯名称",
+      "type": "String"
+    },
+    {
+      "name": "is_active",
+      "title": "是否启用",
+      "type": "Boolean"
+    }
+  ]
+}

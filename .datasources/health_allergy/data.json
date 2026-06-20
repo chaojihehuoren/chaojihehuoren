@@ -1,0 +1,44 @@
+[
+  {
+    "_id": "allergy_001",
+    "createdAt": 1718000000000,
+    "updatedAt": 1718000000000,
+    "member_id": "member_001",
+    "allergen_name": "芒果",
+    "allergen_category": "food",
+    "severity": "moderate",
+    "symptoms": ["口唇发痒", "轻微红肿"],
+    "discovered_at": 1718000000000,
+    "source": "self-reported",
+    "notes": "食用后30分钟出现症状",
+    "is_active": true
+  },
+  {
+    "_id": "allergy_002",
+    "createdAt": 1718908800000,
+    "updatedAt": 1718908800000,
+    "member_id": "member_001",
+    "allergen_name": "花粉",
+    "allergen_category": "environmental",
+    "severity": "mild",
+    "symptoms": ["打喷嚏", "轻微鼻痒"],
+    "discovered_at": 1718908800000,
+    "source": "self-reported",
+    "notes": "春季多发",
+    "is_active": true
+  },
+  {
+    "_id": "allergy_003",
+    "createdAt": 1721000000000,
+    "updatedAt": 1721000000000,
+    "member_id": "member_002",
+    "allergen_name": "虾",
+    "allergen_category": "food",
+    "severity": "severe",
+    "symptoms": ["皮肤红肿", "呼吸困难"],
+    "discovered_at": 1721000000000,
+    "source": "doctor-diagnosis",
+    "notes": "曾就医急救，需随身携带抗过敏药物",
+    "is_active": true
+  }
+]

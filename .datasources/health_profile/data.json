@@ -1,0 +1,47 @@
+[
+  {
+    "_id": "profile_001",
+    "createdAt": 1718908800000,
+    "updatedAt": 1721597200000,
+    "member_id": "member_001",
+    "latest_report_id": "report_002",
+    "report_count": 2,
+    "allergy_records": [
+      {
+        "allergen": "芒果",
+        "category": "food",
+        "severity": "moderate",
+        "discovered_at": 1718000000000,
+        "notes": "食用后出现口唇发痒"
+      },
+      {
+        "allergen": "花粉",
+        "category": "environmental",
+        "severity": "mild",
+        "discovered_at": 1718908800000,
+        "notes": "春季偶有打喷嚏"
+      }
+    ],
+    "chronic_conditions": ["高血压家族史"],
+    "family_history": ["父亲有高血压", "母亲有糖尿病"],
+    "sleep_quality": "fair",
+    "exercise_frequency": "weekly",
+    "diet_habits": ["喜清淡", "少食多餐", "偏素食"],
+    "is_public": true
+  },
+  {
+    "_id": "profile_002",
+    "createdAt": 1721000000000,
+    "updatedAt": 1721000000000,
+    "member_id": "member_002",
+    "latest_report_id": "report_003",
+    "report_count": 1,
+    "allergy_records": [],
+    "chronic_conditions": [],
+    "family_history": [],
+    "sleep_quality": "good",
+    "exercise_frequency": "daily",
+    "diet_habits": ["荤素搭配", "定时定量"],
+    "is_public": true
+  }
+]

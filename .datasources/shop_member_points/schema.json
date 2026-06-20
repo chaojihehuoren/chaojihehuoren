@@ -1,0 +1,43 @@
+{
+  "name": "shop_member_points",
+  "title": "积分账户",
+  "schemas": [
+    {
+      "name": "member_id",
+      "title": "会员ID",
+      "type": "String",
+      "description": "关联会员基础信息"
+    },
+    {
+      "name": "balance",
+      "title": "积分余额",
+      "type": "Number",
+      "description": "当前可用积分"
+    },
+    {
+      "name": "total_earned",
+      "title": "累计获取",
+      "type": "Number",
+      "description": "历史累计获取积分"
+    },
+    {
+      "name": "total_used",
+      "title": "累计消耗",
+      "type": "Number",
+      "description": "历史累计消耗积分"
+    },
+    {
+      "name": "expiry_date",
+      "title": "积分到期时间",
+      "type": "DateTime",
+      "format": "timestamp-ms",
+      "description": "积分过期时间"
+    },
+    {
+      "name": "frozen_points",
+      "title": "冻结积分",
+      "type": "Number",
+      "description": "待生效的积分"
+    }
+  ]
+}

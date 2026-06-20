@@ -1,0 +1,76 @@
+[
+  {
+    "_id": "plan_001",
+    "createdAt": 1718908800000,
+    "updatedAt": 1721597200000,
+    "member_id": "member_001",
+    "report_id": "report_001",
+    "constitution_type": "气虚质",
+    "plan_name": "气虚质30天调理方案",
+    "start_date": "2024-06-21",
+    "end_date": "2024-07-20",
+    "status": "completed",
+    "daily_plans": [
+      {
+        "day": 1,
+        "date": "2024-06-21",
+        "theme": "补气健脾启动日",
+        "breakfast": "山药粥（山药50g、粳米100g）",
+        "lunch": "党参炖鸡（党参15g、鸡肉200g）",
+        "dinner": "小米红枣粥（小米100g、红枣5颗）",
+        "tea_recipe": "黄芪枸杞茶（黄芪5g、枸杞10粒）",
+        "soup_recipe": "参芪鸡汤（人参5g、黄芪20g、鸡肉300g）",
+        "contraindications": "避免熬夜、过度劳累",
+        "completed": true,
+        "notes": "感觉精神有所改善"
+      },
+      {
+        "day": 2,
+        "date": "2024-06-22",
+        "theme": "养血补气日",
+        "breakfast": "红枣桂圆粥（红枣5颗、桂圆10g、粳米100g）",
+        "lunch": "当归羊肉汤（当归10g、羊肉150g）",
+        "dinner": "番茄鸡蛋面（番茄1个、鸡蛋1个、面条100g）",
+        "tea_recipe": "红枣茶（红枣3颗去核）",
+        "soup_recipe": "红枣乌鸡汤（红枣10颗、乌鸡半只）",
+        "contraindications": "少吃萝卜、茶叶",
+        "completed": true,
+        "notes": "睡眠质量有所提高"
+      },
+      {
+        "day": 3,
+        "date": "2024-06-23",
+        "theme": "健脾益气日",
+        "breakfast": "茯苓粥（茯苓15g、粳米100g）",
+        "lunch": "山药排骨汤（山药100g、排骨200g）",
+        "dinner": "清蒸鲈鱼（鲈鱼150g、姜丝适量）",
+        "tea_recipe": "陈皮茶（陈皮3g）",
+        "soup_recipe": "四神汤（茯苓15g、莲子15g、芡实15g、薏米15g）",
+        "contraindications": "忌食生冷",
+        "completed": true,
+        "notes": "胃口有所改善"
+      }
+    ],
+    "recommended_products": [
+      {
+        "product_id": "prod_001",
+        "product_name": "野生黄芪片",
+        "usage": "每日5g泡水或炖汤",
+        "reason": "补气固表，提升免疫力"
+      },
+      {
+        "product_id": "prod_002",
+        "product_name": "枸杞原浆",
+        "usage": "每日30ml，早晚各一次",
+        "reason": "滋补肝肾，益精明目"
+      },
+      {
+        "product_id": "prod_003",
+        "product_name": "西洋参切片",
+        "usage": "每日3g含服或泡水",
+        "reason": "补气养阴，清热生津"
+      }
+    ],
+    "progress": 100
+  }
+]

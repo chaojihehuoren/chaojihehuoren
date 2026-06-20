@@ -1,0 +1,58 @@
+[
+  {
+    "_id": "points_001",
+    "member_id": "member_001",
+    "balance": 2880,
+    "total_earned": 8560,
+    "total_used": 5680,
+    "expiry_date": 1751472000000,
+    "frozen_points": 0,
+    "createdAt": 1745203200000,
+    "updatedAt": 1750521600000,
+    "owner": "user_001",
+    "createBy": "user_001",
+    "updateBy": "user_001"
+  },
+  {
+    "_id": "points_002",
+    "member_id": "member_002",
+    "balance": 1280,
+    "total_earned": 1280,
+    "total_used": 0,
+    "expiry_date": 1754064000000,
+    "frozen_points": 0,
+    "createdAt": 1750521600000,
+    "updatedAt": 1750521600000,
+    "owner": "user_002",
+    "createBy": "user_002",
+    "updateBy": "user_002"
+  },
+  {
+    "_id": "points_003",
+    "member_id": "member_003",
+    "balance": 5680,
+    "total_earned": 28500,
+    "total_used": 22820,
+    "expiry_date": 1751472000000,
+    "frozen_points": 200,
+    "createdAt": 1735689600000,
+    "updatedAt": 1750521600000,
+    "owner": "user_003",
+    "createBy": "user_003",
+    "updateBy": "user_003"
+  },
+  {
+    "_id": "points_004",
+    "member_id": "member_004",
+    "balance": 15800,
+    "total_earned": 158000,
+    "total_used": 142200,
+    "expiry_date": 1754064000000,
+    "frozen_points": 0,
+    "createdAt": 1704067200000,
+    "updatedAt": 1750521600000,
+    "owner": "user_004",
+    "createBy": "user_004",
+    "updateBy": "user_004"
+  }
+]
