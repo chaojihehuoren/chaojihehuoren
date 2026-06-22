@@ -101,7 +101,7 @@ export function SeasonalDiscounts({
               </span>
               {/* 库存提示 */}
               {product.stock < 50 && <span className="absolute bottom-1 left-1 bg-orange-500 text-white text-[10px] px-1.5 py-0.5 rounded">
-                  仅剩{person.stock}件
+                  仅剩{product.stock}件
                 </span>}
             </div>
 
