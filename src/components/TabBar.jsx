@@ -16,7 +16,7 @@ const tabs = [{
   label: '购物车',
   icon: ShoppingCart
 }, {
-  id: 'user',
+  id: 'profile',
   label: '我的',
   icon: User
 }];

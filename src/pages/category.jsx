@@ -5,6 +5,8 @@ import { ChevronRight, Grid3X3, Package, ShoppingBag, Heart, User } from 'lucide
 // @ts-ignore;
 import { Button } from '@/components/ui';
 
+// @ts-ignore;
+import { TabBar } from '@/components/TabBar.jsx';
 export default function CategoryPage(props) {
   const [activeCategory, setActiveCategory] = useState('all');
 
@@ -182,5 +184,8 @@ export default function CategoryPage(props) {
           </button>
         </div>
       </div>
+      
+      {/* 底部导航栏 */}
+      <TabBar activeTab="category" />
     </div>;
 }

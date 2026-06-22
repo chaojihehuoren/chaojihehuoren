@@ -5,6 +5,8 @@ import { ShoppingBag, Plus, Minus, Trash2, ArrowRight, Package, Heart } from 'lu
 // @ts-ignore;
 import { Button, useToast } from '@/components/ui';
 
+// @ts-ignore;
+import { TabBar } from '@/components/TabBar.jsx';
 export default function CartPage(props) {
   const {
     toast
@@ -207,5 +209,8 @@ export default function CartPage(props) {
           </button>
         </div>
       </div>
+      
+      {/* 底部导航栏 */}
+      <TabBar activeTab="cart" />
     </div>;
 }

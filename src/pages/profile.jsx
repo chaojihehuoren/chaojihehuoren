@@ -5,6 +5,8 @@ import { User, Settings, Package, Heart, MapPin, CreditCard, Gift, Bell, HelpCir
 // @ts-ignore;
 import { Button, useToast } from '@/components/ui';
 
+// @ts-ignore;
+import { TabBar } from '@/components/TabBar.jsx';
 export default function ProfilePage(props) {
   const {
     toast
@@ -213,5 +215,8 @@ export default function ProfilePage(props) {
           </button>
         </div>
       </div>
+      
+      {/* 底部导航栏 */}
+      <TabBar activeTab="profile" />
     </div>;
 }
