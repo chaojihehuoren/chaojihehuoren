@@ -103,7 +103,7 @@ export function ChannelRebate() {
               </p>
             </div>
           </div>
-        </div>}
+        </div>})
 
       {/* 历史月份明细 */}
       <h3 className="font-bold text-[#5C4033] mb-3">历史对账明细</h3>
@@ -111,56 +111,56 @@ export function ChannelRebate() {
         {MONTHLY_STATEMENTS.map(stmt => {
         const isExpanded = expandedMonths.includes(stmt.month);
         return <div key={stmt.month} className="bg-white rounded-xl border border-[#E8E0D5] overflow-hidden">
-              <button onClick={() => toggleMonth(stmt.month)} className="w-full p-4 flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <div className={`w-10 h-10 rounded-full flex items-center justify-center ${stmt.status === '已结算' ? 'bg-[#5D8A66]/10' : 'bg-[#A85C4A]/10'}`}>
-                    <FileText className={`w-5 h-5 ${stmt.status === '已结算' ? 'text-[#5D8A66]' : 'text-[#A85C4A]'}`} />
+            <button onClick={() => toggleMonth(stmt.month)} className="w-full p-4 flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className={`w-10 h-10 rounded-full flex items-center justify-center ${stmt.status === '已结算' ? 'bg-[#5D8A66]/10' : 'bg-[#A85C4A]/10'}`}>
+                  <FileText className={`w-5 h-5 ${stmt.status === '已结算' ? 'text-[#5D8A66]' : 'text-[#A85C4A]'}`} />
+                </div>
+                <div className="text-left">
+                  <p className="font-bold text-[#5C4033] text-sm">{stmt.period}</p>
+                  <p className="text-xs text-[#8B7355]">
+                    采购 ¥{stmt.totalAmount.toLocaleString()} | 返利 ¥{stmt.rebateAmount.toLocaleString()}
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className={`text-xs font-bold ${stmt.status === '已结算' ? 'text-[#5D8A66]' : 'text-[#A85C4A]'}`}>
+                  {stmt.status}
+                </span>
+                <ChevronDown className={`w-4 h-4 text-[#8B7355] transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
+              </div>
+            </button>
+            {isExpanded && <div className="border-t border-[#E8E0D5] p-4 bg-[#FAF6F0]">
+                <div className="space-y-2 mb-4">
+                  <div className="flex justify-between text-sm">
+                    <span className="text-[#8B7355]">采购总额</span>
+                    <span className="font-bold text-[#5C4033]">¥{stmt.totalAmount.toLocaleString()}</span>
                   </div>
-                  <div className="text-left">
-                    <p className="font-bold text-[#5C4033] text-sm">{stmt.period}</p>
-                    <p className="text-xs text-[#8B7355]">
-                      采购 ¥{stmt.totalAmount.toLocaleString()} | 返利 ¥{stmt.rebateAmount.toLocaleString()}
-                    </p>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-[#8B7355]">返利比例</span>
+                    <span className="font-bold text-[#5C4033]">{stmt.rebateRate}%</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-[#8B7355]">返利金额</span>
+                    <span className="font-bold text-[#5D8A66]">¥{stmt.rebateAmount.toLocaleString()}</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-[#8B7355]">已结金额</span>
+                    <span className="font-bold text-[#5C4033]">¥{stmt.paidAmount.toLocaleString()}</span>
+                  </div>
+                  <div className="flex justify-between text-sm pt-2 border-t border-[#D4C4B0]">
+                    <span className="text-[#5C4033] font-bold">待结金额</span>
+                    <span className="font-bold text-[#A85C4A]">
+                      ¥{(stmt.rebateAmount - stmt.paidAmount).toLocaleString()}
+                    </span>
                   </div>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className={`text-xs font-bold ${stmt.status === '已结算' ? 'text-[#5D8A66]' : 'text-[#A85C4A]'}`}>
-                    {stmt.status}
-                  </span>
-                  <ChevronDown className={`w-4 h-4 text-[#8B7355] transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
-                </div>
-              </button>
-              {isExpanded && <div className="border-t border-[#E8E0D5] p-4 bg-[#FAF6F0]">
-                  <div className="space-y-2 mb-4">
-                    <div className="flex justify-between text-sm">
-                      <span className="text-[#8B7355]">采购总额</span>
-                      <span className="font-bold text-[#5C4033]">¥{stmt.totalAmount.toLocaleString()}</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-[#8B7355]">返利比例</span>
-                      <span className="font-bold text-[#5C4033]">{stmt.rebateRate}%</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-[#8B7355]">返利金额</span>
-                      <span className="font-bold text-[#5D8A66]">¥{stmt.rebateAmount.toLocaleString()}</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-[#8B7355]">已结金额</span>
-                      <span className="font-bold text-[#5C4033]">¥{stmt.paidAmount.toLocaleString()}</span>
-                    </div>
-                    <div className="flex justify-between text-sm pt-2 border-t border-[#D4C4B0]">
-                      <span className="text-[#5C4033] font-bold">待结金额</span>
-                      <span className="font-bold text-[#A85C4A]">
-                        ¥{(stmt.rebateAmount - stmt.paidAmount).toLocaleString()}
-                      </span>
-                    </div>
-                  </div>
-                  <button onClick={() => handleDownload(stmt.period)} className="w-full h-10 bg-white rounded-lg border border-[#E8E0D5] text-[#5C4033] font-bold text-sm flex items-center justify-center gap-2">
-                    <Download className="w-4 h-4" />
-                    下载对账单
-                  </button>
-                </div>}
-            </div>;
+                <button onClick={() => handleDownload(stmt.period)} className="w-full h-10 bg-white rounded-lg border border-[#E8E0D5] text-[#5C4033] font-bold text-sm flex items-center justify-center gap-2">
+                  <Download className="w-4 h-4" />
+                  下载对账单
+                </button>
+              </div>}
+          </div>;
       })}
       </div>
     </div>;

@@ -100,22 +100,22 @@ export function DistributorPerformance() {
         {stats.map((stat, idx) => {
         const Icon = stat.icon;
         return <div key={idx} className="bg-white rounded-xl border border-[#E8E0D5] p-4">
-              <div className="flex items-center justify-between mb-2">
-                <div className={`w-10 h-10 rounded-full flex items-center justify-center`} style={{
+            <div className="flex items-center justify-between mb-2">
+              <div className={`w-10 h-10 rounded-full flex items-center justify-center`} style={{
               backgroundColor: `${stat.color}15`
             }}>
-                  <Icon className="w-5 h-5" style={{
+                <Icon className="w-5 h-5" style={{
                 color: stat.color
               }} />
-                </div>
-                <div className={`flex items-center gap-1 text-xs font-bold ${stat.trend === 'up' ? 'text-[#5D8A66]' : 'text-[#A85C4A]'}`}>
-                  {stat.trend === 'up' ? <ArrowUp className="w-3 h-3" /> : <ArrowDown className="w-3 h-3" />}
-                  {stat.change}
-                </div>
               </div>
-              <p className="text-xs text-[#8B7355] mb-1">{stat.label}</p>
-              <p className="font-bold text-[#5C4033] text-lg">{stat.value}</p>
-            </div>;
+              <div className={`flex items-center gap-1 text-xs font-bold ${stat.trend === 'up' ? 'text-[#5D8A66]' : 'text-[#A85C4A]'}`}>
+                {stat.trend === 'up' ? <ArrowUp className="w-3 h-3" /> : <ArrowDown className="w-3 h-3" />}
+                {stat.change}
+              </div>
+            </div>
+            <p className="text-xs text-[#8B7355] mb-1">{stat.label}</p>
+            <p className="font-bold text-[#5C4033] text-lg">{stat.value}</p>
+          </div>;
       })}
       </div>
 
