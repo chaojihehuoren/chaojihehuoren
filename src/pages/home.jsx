@@ -94,6 +94,8 @@ export default function HomePage(props) {
       }
     });
   };
+
+  // 不再需要本地的hotProducts数据，HotProducts组件会从数据模型获取
   const handleAIDetect = () => {
     props.$w.utils.navigateTo({
       pageId: 'ai-detect',
@@ -142,7 +144,7 @@ export default function HomePage(props) {
 
       {/* 热销商品展示区 */}
       <section className="px-4 mt-8">
-        <HotProducts products={hotProducts} onProductClick={handleProductClick} />
+        <HotProducts onProductClick={handleProductClick} $w={props.$w} />
       </section>
 
       {/* 经销商采购入口 */}

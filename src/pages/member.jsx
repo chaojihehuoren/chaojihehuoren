@@ -16,28 +16,18 @@ import { DistributorAccess } from '@/components/DistributorAccess.jsx';
 import { CustomerService } from '@/components/CustomerService.jsx';
 import { MemberBenefits } from '@/components/MemberBenefits.jsx';
 import { TabBar } from '@/components/TabBar.jsx';
-// 模拟会员数据
-const mockMemberData = {
-  level: '银卡',
-  nickname: '李明华',
-  phone: '138****8888',
-  avatar: null,
-  points: {
-    balance: 2880,
-    expiryDate: new Date(Date.now() + 15 * 24 * 60 * 60 * 1000).toISOString() // 15天后到期
-  },
-  storage: {
-    balance: 500
-  }
-};
+// 真实会员数据将从 shop_member 和 shop_member_points 模型获取
 export default function MemberCenter(props) {
   const {
     toast
   } = useToast();
   const [showBenefits, setShowBenefits] = useState(false);
   const [userType, setUserType] = useState('银卡');
+  const [memberData, setMemberData] = useState(null);
+  const [pointsData, setPointsData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  // 页面加载时检查登录状态
+  // 页面加载时检查登录状态并获取会员数据
   useEffect(() => {
     // 使用 props.$w.auth.currentUser 获取真实用户信息
     if (!props.$w?.auth?.currentUser?.userId) {
@@ -45,8 +35,90 @@ export default function MemberCenter(props) {
         title: '请先登录',
         description: '即将跳转到登录页'
       });
-      // 可以在这里跳转登录页
+      setLoading(false);
+      return;
     }
+
+    // 获取会员数据和积分数据
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+
+        // 1. 获取会员基础信息
+        const memberResult = await props.$w.cloud.callFunction({
+          name: 'datasource',
+          data: {
+            collection: 'shop_member',
+            action: 'get',
+            query: {
+              _openid: props.$w.auth.currentUser.userId
+            }
+          }
+        });
+        if (memberResult.code === 0 && memberResult.data) {
+          setMemberData(memberResult.data);
+          setUserType(memberResult.data.member_level || '银卡');
+        } else {
+          // 如果没有会员数据，使用默认值
+          setMemberData({
+            member_level: '银卡',
+            nickname: props.$w.auth.currentUser.nickName || '用户',
+            phone: props.$w.auth.currentUser.name || '',
+            avatar: props.$w.auth.currentUser.avatarUrl || null,
+            total_points: 0,
+            wallet_balance: 0
+          });
+        }
+
+        // 2. 获取积分账户信息
+        const pointsResult = await props.$w.cloud.callFunction({
+          name: 'datasource',
+          data: {
+            collection: 'shop_member_points',
+            action: 'get',
+            query: {
+              member_id: props.$w.auth.currentUser.userId
+            }
+          }
+        });
+        if (pointsResult.code === 0 && pointsResult.data) {
+          setPointsData(pointsResult.data);
+        } else {
+          // 如果没有积分数据，使用默认值
+          setPointsData({
+            balance: 0,
+            total_earned: 0,
+            total_used: 0,
+            frozen_points: 0
+          });
+        }
+      } catch (error) {
+        console.error('获取会员数据失败:', error);
+        toast({
+          title: '数据加载失败',
+          description: error.message || '请稍后重试'
+        });
+
+        // 使用默认数据
+        setMemberData({
+          member_level: '银卡',
+          nickname: props.$w.auth.currentUser.nickName || '用户',
+          phone: props.$w.auth.currentUser.name || '',
+          avatar: props.$w.auth.currentUser.avatarUrl || null,
+          total_points: 0,
+          wallet_balance: 0
+        });
+        setPointsData({
+          balance: 0,
+          total_earned: 0,
+          total_used: 0,
+          frozen_points: 0
+        });
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchData();
   }, []);
   const handleNavigate = page => {
     toast({
@@ -73,15 +145,23 @@ export default function MemberCenter(props) {
         </div>
 
         {/* 会员头部卡片 */}
-        <MemberHeader memberInfo={mockMemberData} />
+        {loading ? <div className="bg-white/10 rounded-xl p-6 text-center">
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white mx-auto mb-2"></div>
+            <p className="text-white/80 text-sm">加载中...</p>
+          </div> : <MemberHeader memberInfo={memberData} />}
       </div>
 
       {/* 主要内容区 */}
       <div className="px-4 -mt-4 space-y-4">
         {/* 积分和储值卡片 */}
         <div className="grid grid-cols-2 gap-3">
-          <PointsCard pointsInfo={mockMemberData.points} />
-          <StorageCard storageInfo={mockMemberData.storage} />
+          <PointsCard pointsInfo={{
+          balance: pointsData?.balance || 0,
+          expiryDate: pointsData?.expiry_date ? new Date(pointsData.expiry_date).toISOString() : null
+        }} />
+          <StorageCard storageInfo={{
+          balance: memberData?.wallet_balance || 0
+        }} />
         </div>
 
         {/* 会员权益预览 */}
