@@ -80,6 +80,9 @@ function App() {
         // 模拟返回数据结构
         // 根据不同的请求返回不同的模拟数据
         let responseData = null;
+
+        // 模拟网络延迟
+        await new Promise(resolve => setTimeout(resolve, 100));
         if (data.collection === 'shop_member') {
           responseData = {
             member_level: '银卡',
