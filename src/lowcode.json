@@ -45,6 +45,11 @@
       "id": "aiquestion",
       "name": "AI体质测试",
       "path": "pages/aiquestion.jsx"
+    },
+    {
+      "id": "user",
+      "name": "用户中心",
+      "path": "pages/profile.jsx"
     }
   ]
 }

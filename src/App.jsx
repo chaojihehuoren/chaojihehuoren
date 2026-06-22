@@ -95,7 +95,8 @@ function App() {
     seasonal: <SeasonalPage $w={$w} />,
     category: <CategoryPage $w={$w} />,
     cart: <CartPage $w={$w} />,
-    profile: <ProfilePage $w={$w} />
+    profile: <ProfilePage $w={$w} />,
+    user: <ProfilePage $w={$w} />
   };
   return <div className="app">
       {pages[currentPage] || pages.home}
