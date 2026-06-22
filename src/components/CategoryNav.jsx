@@ -1,10 +1,10 @@
 // @ts-ignore;
 import React from 'react';
 // @ts-ignore;
-import { YinYang, Calendar, Leaf, Heart } from 'lucide-react';
+import { Circle, Calendar, Leaf, Heart } from 'lucide-react';
 
 const iconMap = {
-  YinYang: YinYang,
+  Circle: Circle,
   Calendar: Calendar,
   Leaf: Leaf,
   Heart: Heart

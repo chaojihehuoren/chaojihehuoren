@@ -77,7 +77,10 @@ function App() {
         data
       }) => {
         console.log('调用云函数:', name, data);
+        // 模拟返回数据结构
         return {
+          code: 0,
+          data: null,
           success: true
         };
       },

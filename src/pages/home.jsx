@@ -26,7 +26,7 @@ export default function HomePage(props) {
   const categories = [{
     id: 1,
     name: '体质调理',
-    icon: 'YinYang',
+    icon: 'Circle',
     desc: '个性化养生方案'
   }, {
     id: 2,
