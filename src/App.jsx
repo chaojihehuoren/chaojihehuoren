@@ -7,6 +7,9 @@ import AIQuestionPage from './pages/aiquestion.jsx';
 import MemberPage from './pages/member.jsx';
 import WholesalePage from './pages/wholesale.jsx';
 import SeasonalPage from './pages/seasonal.jsx';
+import CategoryPage from './pages/category.jsx';
+import CartPage from './pages/cart.jsx';
+import ProfilePage from './pages/profile.jsx';
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
   const [pageParams, setPageParams] = useState({});
@@ -89,7 +92,10 @@ function App() {
     aiquestion: <AIQuestionPage $w={$w} />,
     member: <MemberPage $w={$w} />,
     wholesale: <WholesalePage $w={$w} />,
-    seasonal: <SeasonalPage $w={$w} />
+    seasonal: <SeasonalPage $w={$w} />,
+    category: <CategoryPage $w={$w} />,
+    cart: <CartPage $w={$w} />,
+    profile: <ProfilePage $w={$w} />
   };
   return <div className="app">
       {pages[currentPage] || pages.home}

@@ -1,4 +1,50 @@
 {
   "main": "home",
-  "items": []
+  "items": [
+    {
+      "id": "home",
+      "name": "首页",
+      "path": "pages/home.jsx"
+    },
+    {
+      "id": "category",
+      "name": "分类",
+      "path": "pages/category.jsx"
+    },
+    {
+      "id": "cart",
+      "name": "购物车",
+      "path": "pages/cart.jsx"
+    },
+    {
+      "id": "profile",
+      "name": "我的",
+      "path": "pages/profile.jsx"
+    },
+    {
+      "id": "product",
+      "name": "商品详情",
+      "path": "pages/product.jsx"
+    },
+    {
+      "id": "member",
+      "name": "会员中心",
+      "path": "pages/member.jsx"
+    },
+    {
+      "id": "wholesale",
+      "name": "批发中心",
+      "path": "pages/wholesale.jsx"
+    },
+    {
+      "id": "seasonal",
+      "name": "季节特惠",
+      "path": "pages/seasonal.jsx"
+    },
+    {
+      "id": "aiquestion",
+      "name": "AI体质测试",
+      "path": "pages/aiquestion.jsx"
+    }
+  ]
 }
