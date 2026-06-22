@@ -78,9 +78,28 @@ function App() {
       }) => {
         console.log('调用云函数:', name, data);
         // 模拟返回数据结构
+        // 根据不同的请求返回不同的模拟数据
+        let responseData = null;
+        if (data.collection === 'shop_member') {
+          responseData = {
+            member_level: '银卡',
+            nickname: '养生日记',
+            phone: '138****1234',
+            avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
+            total_points: 1250,
+            wallet_balance: 200
+          };
+        } else if (data.collection === 'shop_member_points') {
+          responseData = {
+            balance: 1250,
+            total_earned: 2500,
+            total_used: 1250,
+            frozen_points: 0
+          };
+        }
         return {
           code: 0,
-          data: null,
+          data: responseData,
           success: true
         };
       },
